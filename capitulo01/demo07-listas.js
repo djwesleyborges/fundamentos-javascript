@@ -34,5 +34,31 @@ console.log('depois: ', minhaListaDeTarefas)
 //
 
 const itens = [
-    1, 
+    1, 'computador', 0.22
 ]
+
+// verificar o tipo do array
+console.log(
+    typeof(itens)
+)
+
+// verifica se é array da forma correta
+console.log(Array.isArray(itens))
+
+// ordenar
+const numeros = [3,2,1,0]
+console.log(numeros.sort())
+
+const letras = ['c', 'z', 'a', 'd']
+console.log(letras.sort())
+
+// juntar dois arrays
+const novo = itens.concat(letras)
+console.log(novo)
+
+// juntar dois arrays em uma string
+console.log(itens.join('-'))
+
+// procurando o indece de um elemento no array 
+const index = itens.indexOf('computador')
+console.log(index)
